@@ -1235,7 +1235,7 @@ main {
   height: 320px;
   overflow: hidden;
 }
-.about-left__content span {
+.about-left__content p {
   font-family: "Roboto Light", sans-serif;
   color: #9a9a9a;
   font-size: 17px;
@@ -1243,7 +1243,7 @@ main {
   line-height: 35px;
 }
 @media screen and (max-width: 991px) {
-  .about-left__content span {
+  .about-left__content p {
     font-size: 16px;
   }
 }
