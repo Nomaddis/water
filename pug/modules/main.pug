@@ -34,7 +34,7 @@ main
                                                 td 4л
                                                 td 200грн
                                 .product-more
-                                    a(href="#") Купить
+                                    a(href="#" data-toggle="modal" data-target="#myModal") Купить
                             .product__item
                                 .product-title
                                     span.text-header медицинский спирт
@@ -59,7 +59,7 @@ main
                                             td 4л
                                             td 200грн
                                 .product-more
-                                    a(href="#") Купить
+                                    a(href="#" data-toggle="modal" data-target="#myModal") Купить
                             .product__item
                                 .product-title
                                     span.text-header Сасиски с польцкёго
@@ -70,7 +70,7 @@ main
                                     .text-prev
                                         span Operating as an integrated property development provider, UDG business activities cover land identification and acquisition, planning, financing, resource management, project marketing, building design and construction of residential developments, commercial offices, industrial buildings and retail centers. 
                                 .product-more
-                                    a(href="#") Купить
+                                    a(href="#" data-toggle="modal" data-target="#myModal") Купить
                             .product__item
                                 .product-title
                                     span.text-header сигареты до польцкёго
@@ -81,7 +81,7 @@ main
                                     .text-prev
                                         span Operating as an integrated property development provider, UDG business activities cover land identification and acquisition, planning, financing, resource management, project marketing, building design and construction of residential developments, commercial offices, industrial buildings and retail centers. 
                                 .product-more
-                                    a(href="#") Купить
+                                    a(href="#" data-toggle="modal" data-target="#myModal") Купить
                             .product__item
                                 .product-title
                                     span.text-header салидол
@@ -92,7 +92,7 @@ main
                                     .text-prev
                                         span Operating as an integrated property development provider, UDG business activities cover land identification and acquisition, planning, financing, resource management, project marketing, building design and construction of residential developments, commercial offices, industrial buildings and retail centers. 
                                 .product-more
-                                    a(href="#") Купить
+                                    a(href="#" data-toggle="modal" data-target="#myModal") Купить
             section.numbers#delivery
                 .numbers_inner
                     .container
@@ -317,3 +317,20 @@ main
 
                         .about-text__right
                             .about-right__img
+
+
+            // Modal
+            #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                span(aria-hidden='true') ×
+                            h4#myModalLabel.modal-title Для оформления заказа свяжитесь с нами:
+                        .modal-body
+                            .contact-address_modal
+                                a(href='tel:0442201950') (044) 220 19 50
+                                a(href='tel:044225672') (044) 220 56 72
+                        .modal-footer
+                            button.btn.btn-default(type='button', data-dismiss='modal') Close
+                            //button.btn.btn-primary(type='button') Save changes
