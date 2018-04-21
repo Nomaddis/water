@@ -1469,7 +1469,7 @@ main {
   background: url("../img/overlay-project.png");
 }
 .our-projects-right__item_first {
-  background-image: url("../img/project-filter1.png"), url("../img/project1.jpg");
+  background-image: url("../img/project-filter1.png"), url("../img/delivery.jpg");
 }
 .our-projects-right__item_second {
   background: url("../img/project-filter1.png"), url("../img/opt.jpg") center;
