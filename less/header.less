@@ -4,7 +4,7 @@ header {
 .header-top {
   display: flex;
   justify-content: space-between;
-  padding: 21px 0px 0;
+  padding: 10px 0px 10px;
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -70,6 +70,7 @@ header {
 }
 //main menu styles
 .navbar {
+  margin-bottom: 0px;
   ul {
     list-style-type: none;
     padding: 0;
@@ -147,9 +148,12 @@ header {
 .header-top__phones {
   //padding-top: 8px;
   //margin-top: -2px;
-  margin-bottom: 24px;
+  margin-bottom: 7px;
   @media screen and (max-width: 1024px) {
     margin-bottom: 0px;
+  }
+  @media screen and (max-width: 450px) {
+    text-align: right;
   }
 }
 .phones-list {
@@ -565,4 +569,42 @@ header {
       outline: none;
     }
   }
+}
+
+// =========================== additional styles for header from Pradavan  ========================
+.logo-text {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  padding-left: 40px;
+  transition: all 0.3s ease;
+}
+
+.logo-text:hover {
+  color: #bed62f;
+  text-decoration: none;
+}
+
+.header-top {
+  background: url("../img/rounded-rectangle-5.png");
+}
+
+.navbar ul li a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.phones-list li a {
+  color: #bed62f;
+  font-weight: 700;
+}
+
+.navbar ul li:hover a {
+  transition: all 0.3s ease;
+}
+
+.navbar ul li:hover a {
+  color: #bed62f;
 }

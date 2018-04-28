@@ -30,6 +30,7 @@ $(document).ready(function () {
         //setting-name: setting-value
     });
 
+    /*=================== feedback slider ======================================== */
     $('.feedback-slider').slick((_$$slick = {
         arrows: true,
         adaptiveHeight: true

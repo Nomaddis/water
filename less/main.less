@@ -704,11 +704,13 @@ align-items: inherit;
 //===================== feedback start ======================
 .feedback__people {
   display: flex;
-  align-items: flex-start;
+  //align-items: flex-start;
+  justify-content: center;
+
 }
 .feedback__desc {
-  text-align: left;
-  padding-left: 30px;
+  //text-align: left;
+  text-align: center;
   span {
   }
 }
@@ -748,7 +750,7 @@ align-items: inherit;
 
   p {
     color: #9a9a9a;
-    text-align: left;
+    text-align: center;
   }
   span {
     color: #414042;
@@ -774,30 +776,72 @@ align-items: inherit;
 }
 
 //============================ payment and delivery =============================
-.payment-container {
+.payment-container__delivery, .payment-container__checkout {
+  //width: 47%;
+  width: 536px;
+  border: 2px solid #414042;
+  border-radius: 4px;
+  padding: 15px 0;
+  @media screen and (max-width: 1199px) {
+    width: 698px;
+  }
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 425px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 320px) {
+    width: 100%;
+  }
+}
+
+.payment-container__delivery__items, .payment-container__checkout__items {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.payment-wrap {
-  margin-top: 20px;
-  //margin-right: 30px;
-  &_last {
-    //margin-right: 0;
+
+.payment-container__delivery__title, .payment-container__checkout__title {
+  display: flex;
+  justify-content: center;
+  h4 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0;
   }
 }
-.payment__item {
-  //margin-top: -20px;
+
+.payment-container__delivery {
+  margin-right: 13px;
+  @media screen and (max-width: 1199px) {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}
+.payment-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  //margin-right: 30px;
+}
+.payment-wrap {
+  &_last {
+  }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 15px;
+  }
+}
+.payment__item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .payment__item__title {
   width: 100%;
   text-align: center;
   h3 {
-    margin: 5px 0 0 0;
+    font-size: 18px;
+    margin: 15px 0 0 0;
   }
 }
 .payment__item-wrap {
@@ -827,3 +871,4 @@ align-items: inherit;
   font-size: 20px;
   font-weight: 500;
 }
+

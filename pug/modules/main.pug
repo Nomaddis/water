@@ -120,62 +120,70 @@ main
             section
                 .container
                     .payment-container
-                        .payment-wrap
-                            .payment
-                                .payment__item-wrap
-                                    .payment__item
-                                        .payment__item__img
-                                            .img-cont
-                                                img(src="img/new.png")
-                                        .payment__item__title
-                                            h3 Новая почта
-                                        //.payment__item__desc
-                                        //    p На отделении новой почты
-                        .payment-wrap
-                            .payment
-                                .payment__item-wrap
-                                    .payment__item
-                                        .payment__item__img
-                                            .img-cont
-                                                img(src="img/intime.png")
-                                        .payment__item__title
-                                            h3 Интайм
-                        .payment-wrap
-                            .payment
-                                .payment__item-wrap
-                                    .payment__item
-                                        .payment__item__img
-                                            .img-cont
-                                                img(src="img/del.png")
-                                        .payment__item__title
-                                            h3 Деливери
-                        .payment-wrap
-                            .payment
-                                .payment__item-wrap
-                                    .payment__item
-                                        .payment__item__img
-                                            .img-cont
-                                                img(src="img/privat24.png")
-                                        .payment__item__title
-                                            h3 Приват24
-                        .payment-wrap
-                            .payment
-                                .payment__item-wrap
-                                    .payment__item
-                                        .payment__item__img
-                                            .img-cont
-                                                img(src="img/cash.png")
-                                        .payment__item__title
-                                            h3 Наличными
-                        .payment-wrap.payment-wrap_last
-                            .payment
-                                .payment__item-wrap
-                                    .payment__item
-                                        .payment__item__img
-                                            .img-cont
-                                                img(src="img/e-money.png")
-                                        .payment__item__title
-                                            h3 Э-деньги
+                        .payment-container__delivery
+                            .payment-container__delivery__title
+                                h4 Доставка
+                            .payment-container__delivery__items
+                                .payment-wrap
+                                    .payment
+                                        .payment__item-wrap
+                                            .payment__item
+                                                .payment__item__img
+                                                    .img-cont
+                                                        img(src="img/new.png")
+                                                .payment__item__title
+                                                    h3 Новая почта
+                                                //.payment__item__desc
+                                                //    p На отделении новой почты
+                                .payment-wrap
+                                    .payment
+                                        .payment__item-wrap
+                                            .payment__item
+                                                .payment__item__img
+                                                    .img-cont
+                                                        img(src="img/intime.png")
+                                                .payment__item__title
+                                                    h3 Интайм
+                                .payment-wrap
+                                    .payment
+                                        .payment__item-wrap
+                                            .payment__item
+                                                .payment__item__img
+                                                    .img-cont
+                                                        img(src="img/del.png")
+                                                .payment__item__title
+                                                    h3 Деливери
+                        .payment-container__checkout
+                            .payment-container__checkout__title
+                                h4 Оплата
+                            .payment-container__checkout__items
+                                .payment-wrap
+                                    .payment
+                                        .payment__item-wrap
+                                            .payment__item
+                                                .payment__item__img
+                                                    .img-cont
+                                                        img(src="img/privat24.png")
+                                                .payment__item__title
+                                                    h3 Приват24
+                                .payment-wrap
+                                    .payment
+                                        .payment__item-wrap
+                                            .payment__item
+                                                .payment__item__img
+                                                    .img-cont
+                                                        img(src="img/cash.png")
+                                                .payment__item__title
+                                                    h3 Наличными
+                                .payment-wrap.payment-wrap_last
+                                    .payment
+                                        .payment__item-wrap
+                                            .payment__item
+                                                .payment__item__img
+                                                    .img-cont
+                                                        img(src="img/e-money.png")
+                                                .payment__item__title
+                                                    h3 Э-деньги
 
 
 
@@ -232,70 +240,79 @@ main
                         .feedback-slider.feedback__slider
                             .feedback__slider__item
                                 .feedback__people
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face3.jpg')
-                                    .feedback__desc
-                                        span Назик
-                                        .feedback__slider__item_text
-                                            p Выражаю благодарность за ваше терпение таких дотошных клиентов, как я. Я реально искал тех, с кем буду работать на постоянной основе. В моем деле главное – качество используемого сырья. Я его заказал у вас и не ошибся. Спасибо!
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face3.jpg')
+                                        .feedback__desc
+                                            span Назик
+                                            .feedback__slider__item_text
+                                                p Выражаю благодарность за ваше терпение таких дотошных клиентов, как я. Я реально искал тех, с кем буду работать на постоянной основе. В моем деле главное – качество используемого сырья. Я его заказал у вас и не ошибся. Спасибо!
                                 .feedback__people.feedback__people_middle
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face2.jpg')
-                                    .feedback__desc
-                                        span Петрович
-                                        .feedback__slider__item_text
-                                            p Хочу пожелать вашей компании роста и процветания и еще больше благодарных клиентов! Мы рады, что нашли надежного поставщика питьевого спирта. Всегда довольны качеством вашей продукции и надеемся на дальнейшее сотрудничество с вами!
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face2.jpg')
+                                        .feedback__desc
+                                            span Петрович
+                                            .feedback__slider__item_text
+                                                p Хочу пожелать вашей компании роста и процветания и еще больше благодарных клиентов! Мы рады, что нашли надежного поставщика питьевого спирта. Всегда довольны качеством вашей продукции и надеемся на дальнейшее сотрудничество с вами!
                                 .feedback__people
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face1.jpg')
-                                    .feedback__desc
-                                        span Усатый
-                                        .feedback__slider__item_text
-                                            p Заказал питьевой спирт здесь на сайте впервые. Заказал для личных нужд и пробовать буду завтра на застолье. Скорость принятия заказа и доставки меня порадовала. Первое впечатление – более чем хорошее!
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face1.jpg')
+                                        .feedback__desc
+                                            span Усатый
+                                            .feedback__slider__item_text
+                                                p Заказал питьевой спирт здесь на сайте впервые. Заказал для личных нужд и пробовать буду завтра на застолье. Скорость принятия заказа и доставки меня порадовала. Первое впечатление – более чем хорошее!
                             .feedback__slider__item
                                 .feedback__people
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face3.jpg')
-                                    .feedback__desc
-                                        span Назик
-                                        .feedback__slider__item_text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face3.jpg')
+                                        .feedback__desc
+                                            span Назик
+                                            .feedback__slider__item_text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
                                 .feedback__people.feedback__people_middle
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face2.jpg')
-                                    .feedback__desc
-                                        span Петрович
-                                        .feedback__slider__item_text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face2.jpg')
+                                        .feedback__desc
+                                            span Петрович
+                                            .feedback__slider__item_text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
                                 .feedback__people
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face1.jpg')
-                                    .feedback__desc
-                                        span Усатый
-                                        .feedback__slider__item_text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face1.jpg')
+                                        .feedback__desc
+                                            span Усатый
+                                            .feedback__slider__item_text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
                             .feedback__slider__item
                                 .feedback__people
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face3.jpg')
-                                    .feedback__desc
-                                        span Назик
-                                        .feedback__slider__item_text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face3.jpg')
+                                        .feedback__desc
+                                            span Назик
+                                            .feedback__slider__item_text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit
                                 .feedback__people.feedback__people_middle
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face2.jpg')
-                                    .feedback__desc
-                                        span Петрович
-                                        .feedback__slider__item_text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, suscipit at sem. Curabitur accumsan fermentum elit , suscipit at sem. Curabitur accumsan fermentum elit, suscipit at sem. Curabitur accumsan fermentum elit
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face2.jpg')
+                                        .feedback__desc
+                                            span Петрович
+                                            .feedback__slider__item_text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, suscipit at sem. Curabitur accumsan fermentum elit , suscipit at sem. Curabitur accumsan fermentum elit, suscipit at sem. Curabitur accumsan fermentum elit
                                 .feedback__people
-                                    .feedback__slider__item_avatar
-                                        img(src='img/face1.jpg')
-                                    .feedback__desc
-                                        span Усатый
-                                        .feedback__slider__item_text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, suscipit at sem. Curabitur accumsan fermentum elit
+                                    .feedback__people__inner
+                                        .feedback__slider__item_avatar
+                                            img(src='img/face1.jpg')
+                                        .feedback__desc
+                                            span Усатый
+                                            .feedback__slider__item_text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis tortor, scelerisque non laoreet vitae, suscipit at sem. Curabitur accumsan fermentum elit, suscipit at sem. Curabitur accumsan fermentum elit
 
             section.about
                 .container

@@ -25,7 +25,7 @@ $(document).ready(function(){
     });
 
 
-
+    /*=================== feedback slider ======================================== */
     $('.feedback-slider').slick({
         arrows: true,
         adaptiveHeight: true,

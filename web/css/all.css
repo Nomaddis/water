@@ -544,7 +544,7 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 21px 0px 0;
+  padding: 10px 0px 10px;
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -629,6 +629,9 @@ header {
     padding-right: 10px;
   }
 }
+.navbar {
+  margin-bottom: 0px;
+}
 .navbar ul {
   list-style-type: none;
   padding: 0;
@@ -701,11 +704,16 @@ header {
   }
 }
 .header-top__phones {
-  margin-bottom: 24px;
+  margin-bottom: 7px;
 }
 @media screen and (max-width: 1024px) {
   .header-top__phones {
     margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-top__phones {
+    text-align: right;
   }
 }
 .phones-list {
@@ -1131,6 +1139,38 @@ header {
 }
 .main-slider-scroll button:focus {
   outline: none;
+}
+.logo-text {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  padding-left: 40px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.logo-text:hover {
+  color: #bed62f;
+  text-decoration: none;
+}
+.header-top {
+  background: url("../img/rounded-rectangle-5.png");
+}
+.navbar ul li a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.phones-list li a {
+  color: #bed62f;
+  font-weight: 700;
+}
+.navbar ul li:hover a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navbar ul li:hover a {
+  color: #bed62f;
 }
 /*
 *  ABOUT US BLOCK
@@ -1952,13 +1992,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .feedback__desc {
-  text-align: left;
-  padding-left: 30px;
+  text-align: center;
 }
 .feedback__people_middle {
   margin: 10px 0;
@@ -1990,7 +2029,7 @@ main {
 }
 .feedback__slider__item p {
   color: #9a9a9a;
-  text-align: left;
+  text-align: center;
 }
 .feedback__slider__item span {
   color: #414042;
@@ -2012,7 +2051,39 @@ main {
     font-size: 13px;
   }
 }
-.payment-container {
+.payment-container__delivery,
+.payment-container__checkout {
+  width: 536px;
+  border: 2px solid #414042;
+  border-radius: 4px;
+  padding: 15px 0;
+}
+@media screen and (max-width: 1199px) {
+  .payment-container__delivery,
+  .payment-container__checkout {
+    width: 698px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .payment-container__delivery,
+  .payment-container__checkout {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .payment-container__delivery,
+  .payment-container__checkout {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .payment-container__delivery,
+  .payment-container__checkout {
+    width: 100%;
+  }
+}
+.payment-container__delivery__items,
+.payment-container__checkout__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2021,8 +2092,44 @@ main {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.payment-wrap {
-  margin-top: 20px;
+.payment-container__delivery__title,
+.payment-container__checkout__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.payment-container__delivery__title h4,
+.payment-container__checkout__title h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 0;
+}
+.payment-container__delivery {
+  margin-right: 13px;
+}
+@media screen and (max-width: 1199px) {
+  .payment-container__delivery {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}
+.payment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 425px) {
+  .payment-wrap {
+    margin-bottom: 15px;
+  }
 }
 .payment__item {
   display: -webkit-box;
@@ -2039,7 +2146,8 @@ main {
   text-align: center;
 }
 .payment__item__title h3 {
-  margin: 5px 0 0 0;
+  font-size: 18px;
+  margin: 15px 0 0 0;
 }
 .payment__item-wrap {
   display: -webkit-box;
