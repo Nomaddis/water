@@ -2185,6 +2185,21 @@ main {
   font-size: 20px;
   font-weight: 500;
 }
+.modal-title {
+  text-align: center;
+}
+.modal-footer button {
+  color: #ffffff;
+  font-family: 'Acrom ExtraBold', serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #439c92;
+  text-align: center;
+  border: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
 footer {
   margin-top: 125px;
 }
